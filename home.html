@@ -1,44 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio-V2</title>
+    <title>Thorik | Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">home</a></li>
-                <li><a href="#project">project</a></li>
-                <li><a href="#contact">contact</a></li>
-                <li><a href="#halaman1">halaman1</a></li>
-            </ul>
-           <div class="social-icons">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">MTA<span class="dot">.</span></div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects <span class="dot-nav"></span></a></li>
+                    <li><a href="#add-project">Add Project <span class="dot-nav"></span></a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="far fa-moon"></i>
+                    </button>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
-            <button type="button" id="dark-mode-toggle" class="btn-toggle">mode gelap</button>
         </nav>
     </header>
-        <main>
-            <section class="hero">
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-wrapper">
                 <div class="hero-content">
-                    <h1>selamat datang , di halaman portofolio saya <span></span></h1>
-                    <p>A Product Designer and Visual Developer in SF. I specialize in UI/UX Design, Responsive Web Design, and Visual Development</p>
-                </div>
-                    <div class="cta-group">
-                        <input type="email" placeholder="Email addres">
-                        <button type="button" class="btn-connect">connect with me</button>
+                    <h3 class="serif-heading">Hello, I'm Thorik</h3>
+                    <h1>A <span class="accent-text">Web Developer</span></h1>
+                    <h4 class="sub-heading">focused on functional solutions</h4>
+                    <p>Web Developer yang fokus pada solusi fungsional dan desain yang bersih. Mari membangun sesuatu yang luar biasa bersama.</p>
+                    
+                    <div class="social-links outline-icons">
+                        <div class="social-links outline-icons">
+    <a href="https://www.linkedin.com/in/ahmad-thorik-abdullah-8a20553b1?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+    
+    <a href="https://github.com/" target="_blank">
+        <i class="fab fa-github"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/zyro4453?igsh=dDh1bGwxdXhybG9k&utm_source=qr" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+</div>
                     </div>
-                <div class="hero-image">
-                    <img src="foto-profil.jpeg" alt="foto profil">
-                    <div class="decor-element"></div>
                 </div>
-            </section>
-        </main>
+                <div class="hero-img">
+                    <img src="asset/image/hero-image.png" alt="Thorik">
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title serif-heading">Selected Projects</h2>
+                
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3>Membuat Project Laravel</h3>
+                            <p>
+                                membuat project Laravel sederhana dengan fitur CRUD (Create, Read, Update, Delete) untuk manajemen data pengguna.
+                            </p>
+                            <span class="tag">view</span>
+                        </div>    
+                    </div>
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3>Membuat Project Login</h3>
+                            <p>
+                                membuat project login sederhana dengan HTML, CSS, dan JavaScript. Proyek ini mencakup form login yang responsif.
+                            </p>
+                            <span class="tag">view</span>
+                        </div>    
+                    </div>
+                    <div class="project-card">
+                       <div class="card-content">
+                            <h3>Membuat Project API</h3>
+                            <p>
+                                membuat project API sederhana menggunakan Node.js dan Express. Proyek ini mencakup endpoint untuk operasi CRUD (Create, Read, Update, Delete) pada data pengguna.
+                            </p>
+                            <span class="tag">view</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3>Membuat Mini project backend</h3>
+                            <p>
+                                membuat mini project menggunakan crud dan mysql dengan bahasa pemrograman PHP. Proyek ini mencakup pembuatan tabel, query, dan manipulasi data untuk manajemen pengguna.
+                            </p>
+                            <span class="tag">view</span>
+                        </div> 
+                    </div>
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3>Membuat project database </h3>
+                            <p>
+                                membuat project database sederhana dengan MySQL. Proyek ini mencakup pembuatan tabel, query, dan manipulasi data.
+                            </p>
+                            <span class="tag">view</span>
+                        </div>    
+                    </div>
+                    <div class="project-card">
+                        <div class="card-content">
+                            <h3>Membuat Project Servers</h3>
+                            <p>
+                                membuat project server sederhana menggunakan Node.js dan Express. Proyek ini mencakup pembuatan server, routing, dan penanganan permintaan HTTP.
+                            </p>
+                            <span class="tag">view</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- ============================= Add Project Section ============================= -->
+<section id="add-project" class="add-project-section">
+    <div class="container">
+        <div class="admin-tools">
+            <h2 class="serif-heading">Tambah Proyek Baru</h2> 
+            <div class="form-container">
+                <input type="text" placeholder="Judul Proyek" required>
+                <textarea rows="4" placeholder="Deskripsi Proyek" required></textarea>
+                <button class="btn-primary">Tambah Proyek</button>
+            </div>
+            <div class="json-actions">
+                <button class="btn-success"><i class="fas fa-file-export"></i> Export JSON</button>
+                <button class="btn-info"><i class="fas fa-file-import"></i> Import JSON</button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- =============================contact section ============================= -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h2 class="serif-heading">Mari Berkolaborasi! 🤝</h2>
+                        <div class="info-block">
+                            <p class="label">Contact info</p>
+                            <p class="value">muhammadthorikabdullah</p>
+                        </div>
+                        <div class="social-links outline-icons small-icons">
+                            <a href="https://www.linkedin.com/in/ahmad-thorik-abdullah-8a20553b1?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            <a href="https://github.com/" target="_blank">
+                            <i class="fab fa-github"></i>
+                                </a>
+                            <a href="https://www.instagram.com/zyro4453?igsh=dDh1bGwxdXhybG9k&utm_source=qr" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                                </a>
+                            <a href="#"><i class="fas fa-code"></i></a>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form">
+                        <div class="input-row">
+                            <input type="text" placeholder="Name" required>
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <textarea rows="4" placeholder="Message" required></textarea>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- ======================= footer  ================ -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">MTA<span class="dot">.</span></div>
+                <div class="social-links outline-icons tiny-icons">
+                    <a href="https://www.linkedin.com/in/ahmad-thorik-abdullah-8a20553b1?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    <a href="https://github.com/" target="_blank">
+                    <i class="fab fa-github"></i>
+                        </a>
+                    <a href="https://www.instagram.com/zyro4453?igsh=dDh1bGwxdXhybG9k&utm_source=qr" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                        </a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2024 Muhammad Thorik Abdullah. Built with Passion & Code.</p>
+        </div>
+    </footer>
+    <script src="asset/js/script.js"></script>
 </body>
 </html>
